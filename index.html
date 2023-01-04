@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Agrícola Apan</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./wwwroot/css/site.css">
 </head>
 
@@ -55,7 +54,7 @@
     </div>
 
     <div class="container">
-        <div class="row mt-5">
+        <div class="row mt-2">
             <div class="col-md-4">
                 <h4>Nuestras Ofertas</h4>
                 <h3>Ofertas Especiales</h3>
@@ -68,12 +67,41 @@
 
             <div class="col-md-8">
                 <!-- Carousel -->
-                <div class="carousel-item active">
-                    <img src="https://implementoskrahn.com/wp-content/uploads/2021/03/7750-1-LISTO-.jpg"
-                        alt="Los Angeles" class="d-block imagen-oferta">
-                    <div class="carousel-caption">
-                        <h3>Los Angeles</h3>
-                        <p>We had such a great time in LA!</p>
+                <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                    <!-- Indicators/dots -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    </div>
+
+                    <!-- The slideshow/carousel -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://www.w3schools.com/bootstrap5/la.jpg" alt="Los Angeles"
+                                class="d-block imagen-oferta" style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>Los Angeles</h3>
+                                <p>We had such a great time in LA!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.w3schools.com/bootstrap5/ny.jpg" alt="Chicago"
+                                class="d-block imagen-oferta" style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>Chicago</h3>
+                                <p>Thank you, Chicago!</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.w3schools.com/bootstrap5/chicago.jpg" alt="New York"
+                                class="d-block imagen-oferta" style="width:100%">
+                            <div class="carousel-caption">
+                                <h3>New York</h3>
+                                <p>We love the Big Apple!</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -81,18 +109,44 @@
     </div>
 
 
+    <div class="container-marcas mt-1">
+        <div class="slider">
+          <div class="slider-items">        
+            <div class="slider-item">
+              <img src="./wwwroot/img/Marcas/JohnDeere.png">
+            </div>
+            <div class="slider-item">
+                <img src="./wwwroot/img/Marcas/MasseyFerguson.png">
+              </div>
+              <div class="slider-item">
+                <img src="./wwwroot/img/Marcas/NewHolland.png">
+              </div>
+              <div class="slider-item">
+                <img src="./wwwroot/img/Marcas/Case.png">
+              </div>
+              <div class="slider-item">
+                <img src="./wwwroot/img/Marcas/Cat.png">
+              </div>
+              <div class="slider-item">
+                <img src="./wwwroot/img/Marcas/Komatsu.png">
+              </div>
+        
+          </diV>
+        </div>
+      </div>      
+
+
+
 
     <!-- Site footer -->
-    <footer class="site-footer">
+    <footer class="site-footer mt-3">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-6">
-                    <h6>About</h6>
-                    <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to help the
-                        upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or
-                        snippets as the code wants to be simple. We will help programmers build up concepts in different
-                        programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android,
-                        SQL and Algorithm.</p>
+                    <h6>Nosotros</h6>
+                    <p class="text-justify">Agricola Apan, su Distribuidor Autorizado MASSEY FERGUSON para los Estados de Hidalgo, Tlaxcala y Norte de Puebla, le ofrece los mejores productos y el precio más competitivo, respaldados con la marca líder en tecnología agrícola a nivel mundial, MASSEY FERGUSON.
+
+                        Nuestros Tractores, Cosechadoras, Equipo Forrajero y de Labranza, son símbolo de excelente rendimiento, la mayor fiabilidad, comodidad y sobretodo calidad.</p>
                 </div>
 
                 <div class="col-xs-6 col-md-3">
@@ -123,9 +177,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
-                        <a href="#">Scanfcode</a>.
-                    </p>
+                    <p class="copyright-text">Copyright &copy; 2023 Agricola Apan Todos los Derechos Reservados.                    </p>
                 </div>
 
                 <div class="col-md-4 col-sm-6 col-xs-12">
@@ -142,9 +194,8 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./wwwroot/js/slider.js"></script>
 </body>
 
 </html>
