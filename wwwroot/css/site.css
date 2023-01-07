@@ -31,6 +31,11 @@
   height: 100%;
 }
 
+
+.img-fluid {
+    width: 100%;
+}
+
 /* FOOTER */
 .site-footer {
   background-color: var(--gray);
@@ -174,14 +179,14 @@
 /* Sección Ofertas */
 
 .detalle-oferta {
-  background-color: var(--gray);
+  background-color: var(--gray);  
   width: 100%;
   color: var(--white);
 }
 
 .imagen-oferta {
   width: 100%;
-  height: 100%;
+  height: 30em;
 }
 
 .seccion {
@@ -189,6 +194,39 @@
   width: 100%;
   color: var(--white);
 }
+
+
+.oferta-banner {
+    margin-left: 0 auto !important;
+    margin-bottom: 0 !important;
+    width: 100%;
+    background-color: var(--gray) !important;
+    opacity: 0.75;
+}
+
+.Precio-Inicial {
+    text-decoration:line-through;
+    color: var(--white);
+}
+
+.Precio-Oferta {
+    color: var(--white);
+    font-weight: bold;
+}
+
+.descripcion-Producto {
+    color: var(--white);
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-left: 5%;
+    line-height: 1px;
+    }
+    
+    .button-oferta {
+    margin-top: 15px;
+    width: 60%;
+    }
 
 /* Slider de Marcas */
 .hide { display: none; }
